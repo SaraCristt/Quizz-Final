@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="campo"> 
+        <h1 id="título"><strong>Dados Pessoais</strong></h1>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"></label><strong>Nome</strong></label> 
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+        <div id="check">
+            <br><label><strong>Qual categoria foi sua favorita?</strong></label><br><br>
+            <input type="checkbox" id="Animais" name="Animais" value="Animais">
+            <label for="Animais"> Animais</label><br>
+            <input type="checkbox" id="Ciências" name="Ciências" value="Ciências">
+            <label for="Ciências"> Ciências</label><br>
+            <input type="checkbox" id="Datas Comemorativas" name="Datas Comemorativas" value="Datas Comemorativas">
+            <label for="Datas Comemorativas"> Datas Comemorativas</label><br>
+            <input type="checkbox" id="Esportes" name="Esportes" value="Esportes">
+            <label for="Esportes"> Esportes</label><br>
+            <input type="checkbox" id="Geografia" name="Geografia" value="Geografia">
+            <label for="Geografia"> Geografia</label><br>
+            <input type="checkbox" id="História" name="História" value="História">
+            <label for="História"> História</label><br>
+            <input type="checkbox" id="Inglês" name="Inglês" value="Inglês">
+            <label for="Inglês"> Inglês</label><br>
+            <input type="checkbox" id="Matemática" name="Matemática" value="Matemática">
+            <label for="Matemática"> Matemática</label><br>
+            <input type="checkbox" id="Português" name="Português" value="Português">
+            <label for="Português"> Português</label><br>
+        </div>
+    </fieldset>
+        <div class="campo"> 
+            <br><h2><strong>Sobre o site:</strong></h2>
+            <label for="senioridade"><strong>Nosso site foi útil?</strong></label>
+                    <select id="senioridade">
+                      <option selected disabled value="">Selecione</option> 
+                      <option>Sim</option>
+                      <option>Um pouco</option>
+                      <option>Não</option>
+                    </select> 
+        </div>
+    
+        <div class="campo">
+            <label><strong>Dúvida ou sugestões:</strong></label>
+            <textarea row="6" style="width: 26em" id="duvidaousugestões" name="duvidaousugestões"></textarea>
+        </div>
+        <button class="botao" type="submit" onsubmit="">Concluído</button>   
+    
+
+    </form>
+ 
+</body>
+</html>
